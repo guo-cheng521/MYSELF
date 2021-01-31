@@ -1,1 +1,20 @@
 
+//整形提升
+int main(){
+  char a = 0xb6;
+  short b = 0xb600;
+  int c = 0xb6000000;
+  if(0xb6 == a){
+    printf("%d", a);
+  }
+  if(0xb600 == b){
+    printf("%d", b);
+  }
+  if(0xb6000000 == c){
+    printf("%d", c);
+  }
+  return 0;
+}
+//即使是char 类型的·，在计算时先扩充为Int类型。最后截断
+//以符号位扩充，符号位为1都扩充为1.
+
