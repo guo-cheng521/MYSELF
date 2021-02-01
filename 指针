@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+//*p = i;
+//p++;
+//*p++ = i;与上两式等效
+int main() {
+	int* p = NULL;	//NULL-用来初始化指针
+	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+	printf("%d\n", &arr[9] - &arr[0]);	//指针减指针得到的是中间元素个数
+	
+	//指向数组的指针可以与数组后边的地址比较，不要与数组前边的位置比较
+	//&arr, 不是首元素地址，表示整个数组地址; sizeof(arr),也不是首元素
+
+	//全局变量未初始化，默认为0
+	//sizeof()返回值为无符号数，和int型比较大小，int要转换为无符号数
+	//=优先级>，优先级
+	return 0;
+}
+
+//返回n二进制中1的个数
+//int count(int n) {
+//	int count = 0;
+//	while (n) {
+//		n = n & (n - 1);
+//		count++;
+//		return count;
+//	}
+//}
