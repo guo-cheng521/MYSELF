@@ -157,3 +157,23 @@
 //char* (*pf)(char*, const char*) = my_strcpy;
 //char* (*arr[1])(char*, const char*);
 //pf[0] = my_strcpy;
+
+
+//int main()
+//{
+//	int a = 10;
+//	//int* pa = &a;//
+//	//char* pc = &a;
+//
+//	//char ch = 'w';
+//	void* p = &a;
+//	//*p = 0;
+//	//p++;
+//
+//	//p = &ch;
+//	//void* 类型的指针 可以接收任意类型的地址
+//	//void* 类型的指针 不能进行解引用操作
+//	//void* 类型的指针 不能进行+-整数的操作
+//
+//	return 0;
+//}
