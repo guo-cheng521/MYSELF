@@ -1,0 +1,2 @@
+D:\c_text\MYSELF\通讯录\Debug\通讯录.exe
+D:\c_text\MYSELF\通讯录\Debug\通讯录.pdb
