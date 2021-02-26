@@ -1,0 +1,2 @@
+D:\c_text\MYSELF\文件操作\Debug\文件操作.exe
+D:\c_text\MYSELF\文件操作\Debug\文件操作.pdb

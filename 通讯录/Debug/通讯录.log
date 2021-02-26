@@ -1,4 +1,6 @@
 ﻿  contact.c
-  test.c
-  正在生成代码...
+D:\c_text\MYSELF\通讯录\contact.c(7,36): warning C4013: “malloc”未定义；假设外部返回 int
+D:\c_text\MYSELF\通讯录\contact.c(45,32): warning C4013: “realloc”未定义；假设外部返回 int
+D:\c_text\MYSELF\通讯录\contact.c(45,1): warning C4047: “初始化”:“PeoInfo *”与“int”的间接级别不同
+D:\c_text\MYSELF\通讯录\contact.c(188,6): warning C4013: “free”未定义；假设外部返回 int
   通讯录.vcxproj -> D:\c_text\MYSELF\通讯录\Debug\通讯录.exe
