@@ -141,16 +141,34 @@ struct S
 //	return 0;
 //}
 
+//int main()
+//{
+//	struct S s = { 0 };
+//	FILE* pf = fopen("test.txt", "rb");
+//	if (pf == NULL)
+//	{
+//		return 0;
+//	}
+//	fread(&s, sizeof(struct S), 1, pf);
+//	printf("%d %s\n", s.n, s.arr);
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
 int main()
 {
-	struct S s = { 0 };
-	FILE* pf = fopen("test.txt", "rb");
+	FILE* pf = fopen("test.txt", "r");
 	if (pf == NULL)
 	{
 		return 0;
 	}
-	fread(&s, sizeof(struct S), 1, pf);
-	printf("%d %s\n", s.n, s.arr);
+	fseek(pf, 2, SEEK_CUR);
+	//SEEK_CUR 文件指针当前位置
+	//SEEK_SET 起始位置
+	//SEEK_END 结束位置
+	int ch = fgetc(pf);
+	printf("%c\n", ch);
 	fclose(pf);
 	pf = NULL;
 	return 0;
